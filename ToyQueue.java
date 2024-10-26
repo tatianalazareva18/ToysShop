@@ -18,10 +18,17 @@ public class ToyQueue {
         }
     }
 
-
     // Метод для случайного выбора игрушки
     public Toy get() {
-        
+        int totalWeight = queue.size(); 
+        int randomValue = new Random().nextInt(totalWeight); 
+        int index = 0; 
+        for (Toy toy : queue) { 
+            if (index == randomValue) { 
+                return toy; 
+            } 
+            index++; 
+        }
         return null;
     }
 
