@@ -18,6 +18,7 @@ public class ToyQueue {
         }
     }
 
+    
     // Метод для случайного выбора игрушки
     public Toy get() {
         int totalWeight = queue.size();
